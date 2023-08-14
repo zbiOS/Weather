@@ -16,6 +16,11 @@ class ViewController: UIViewController {
         button.backgroundColor = UIColor.blue
         button.setTitle("hello world", for: .normal)
         view.addSubview(button)
+        
+        let label = UILabel()
+        label.text = "Hi"
+        label.frame = CGRect(x: CGRectGetMaxX(button.frame) + 20, y: button.frame.origin.y, width: 100, height: 40)
+        view.addSubview(label)
         // Do any additional setup after loading the view.
     }
 
